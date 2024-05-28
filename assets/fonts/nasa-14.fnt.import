@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://beul1vhvrooyo"
+path="res://.godot/imported/nasa-14.fnt-d9739a97baa8c115dee4874c5afdea47.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/nasa-14.fnt"
+dest_files=["res://.godot/imported/nasa-14.fnt-d9739a97baa8c115dee4874c5afdea47.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

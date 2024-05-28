@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://cv338k17hmd4i"
+path="res://.godot/imported/nasa-10.fnt-4f1dc3dcac024bf4883e20269f2cc6af.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/nasa-10.fnt"
+dest_files=["res://.godot/imported/nasa-10.fnt-4f1dc3dcac024bf4883e20269f2cc6af.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

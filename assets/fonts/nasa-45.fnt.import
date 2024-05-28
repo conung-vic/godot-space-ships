@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://comh5w3co4cek"
+path="res://.godot/imported/nasa-45.fnt-fb24a888dec8a3d0679da5125a9c2275.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/nasa-45.fnt"
+dest_files=["res://.godot/imported/nasa-45.fnt-fb24a888dec8a3d0679da5125a9c2275.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

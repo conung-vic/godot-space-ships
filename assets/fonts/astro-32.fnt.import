@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://p3fs05id8pvg"
+path="res://.godot/imported/astro-32.fnt-bc6c8fd50e5f71be6be0a01dfb91b4ae.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/astro-32.fnt"
+dest_files=["res://.godot/imported/astro-32.fnt-bc6c8fd50e5f71be6be0a01dfb91b4ae.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

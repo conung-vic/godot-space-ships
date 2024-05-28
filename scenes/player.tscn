@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1mj58rjwqbg2"]
+
+[ext_resource type="Texture2D" uid="uid://m6hfprxxy3dd" path="res://assets/sprites/player.png" id="1_qo0fq"]
+
+[sub_resource type="GDScript" id="GDScript_n486s"]
+script/source = "extends Area2D
+
+signal hit
+
+@export var speed = 200
+var screen_size
+
+func _ready():
+	screen_size = get_viewport_rect().size
+
+func _process(delta):
+	var velocity = Vector2.ZERO
+	if Input.is_action_pressed(\"move_right\"):
+		velocity.x += 1	if Input.is_action_pressed(\"move_left\"):
+		velocity.x -= 1
+	
+	if velocity.length() > 0:
+		velocity = velocity.normalized() * speed
+	
+	position += velocity * delta
+	position = position.clamp(Vector2.ZERO, screen_size)
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ykfms"]
+radius = 20.0
+height = 68.0
+
+[node name="Player" type="Area2D"]
+script = SubResource("GDScript_n486s")
+speed = 300
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qo0fq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ykfms")

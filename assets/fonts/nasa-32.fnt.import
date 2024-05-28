@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://7btil2dlpmcp"
+path="res://.godot/imported/nasa-32.fnt-d86834053e4f8a1ea0c986886c7fc58b.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/nasa-32.fnt"
+dest_files=["res://.godot/imported/nasa-32.fnt-d86834053e4f8a1ea0c986886c7fc58b.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

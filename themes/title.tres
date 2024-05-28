@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://djwoo347ux80e"]
+
+[ext_resource type="FontFile" uid="uid://bk46wl3kdgfg" path="res://assets/fonts/astro-45.fnt" id="1_df0bs"]
+
+[resource]
+default_font = ExtResource("1_df0bs")
+default_font_size = 15

@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2tefh5bouy1i"]
+
+[ext_resource type="Texture2D" uid="uid://0k1ofvqtvmdb" path="res://assets/backgrounds/back04.jpg" id="1_0q7lt"]
+[ext_resource type="Script" path="res://scenes/game_title.gd" id="1_5ohyc"]
+[ext_resource type="Theme" uid="uid://djwoo347ux80e" path="res://themes/title.tres" id="3_8t1g6"]
+
+[node name="GameTitle" type="Node"]
+script = ExtResource("1_5ohyc")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(600, 400)
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("1_0q7lt")
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_left = 341.0
+offset_top = 191.0
+offset_right = 1160.0
+offset_bottom = 267.0
+theme = ExtResource("3_8t1g6")
+theme_override_font_sizes/font_size = 65
+text = "Galaxy Invanders 1.0"
+
+[node name="ClickLabel" type="Label" parent="."]
+offset_left = 123.0
+offset_top = 548.0
+offset_right = 537.0
+offset_bottom = 600.0
+theme = ExtResource("3_8t1g6")
+theme_override_font_sizes/font_size = 45
+text = "Click to start..."

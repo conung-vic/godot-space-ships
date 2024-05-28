@@ -1,12 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://7x5mp0m0fayh"]
+[gd_scene load_steps=7 format=3 uid="uid://7x5mp0m0fayh"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_gs6sj"]
 [ext_resource type="Texture2D" uid="uid://bn71gguoswbep" path="res://assets/backgrounds/back01.jpg" id="1_gwshl"]
+[ext_resource type="PackedScene" uid="uid://ev11s4nl0wyq" path="res://scenes/hud.tscn" id="3_53m7h"]
+[ext_resource type="PackedScene" uid="uid://b2tefh5bouy1i" path="res://scenes/game_title.tscn" id="4_b723u"]
+[ext_resource type="PackedScene" uid="uid://b1mj58rjwqbg2" path="res://scenes/player.tscn" id="4_r7wnu"]
+[ext_resource type="AudioStream" uid="uid://mnpt2wlt8j84" path="res://assets/audio/music/theme_01.mp3" id="5_ytxph"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_gs6sj")
+player_scene = ExtResource("4_r7wnu")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(600, 400)
 scale = Vector2(1.6, 1.6)
 texture = ExtResource("1_gwshl")
+
+[node name="HUD" parent="." instance=ExtResource("3_53m7h")]
+
+[node name="GameTitle" parent="." instance=ExtResource("4_b723u")]
+
+[node name="ThemePlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ytxph")
+autoplay = true
+
+[connection signal="title_screen_clicked" from="GameTitle" to="." method="_on_game_title_title_screen_clicked"]
